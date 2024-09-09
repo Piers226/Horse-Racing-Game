@@ -34,16 +34,3 @@ Welcome to the **Horse Racing Game**, a real-time multiplayer racing game where 
 
 4. **Winning Condition**:
    The first horse to cross the finish line wins the race. The server calculates the winner and broadcasts the result to all players, along with a scoreboard update.
-
-## Setup Instructions
-
-### Prerequisites
-- **Node.js**: Make sure Node.js is installed on your system. You can download it from [Node.js](https://nodejs.org).
-- **npm**: Node Package Manager (comes with Node.js) for installing project dependencies.
-
-### Installation
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/horse-racing-game.git
-   cd horse-racing-game
