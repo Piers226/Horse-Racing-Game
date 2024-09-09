@@ -1,0 +1,77 @@
+<!--- PIERS RAJGURU CSE 264 Final Project-->
+
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Horse Derby</title>
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <img src="/images/background.png" alt="background image" id="background"> <!-- background image -->
+  <h1 id = "titlebar" style = "color: white; ">Horse Racing!</h1>
+  <div id="container"> <!-- container for the game -->
+    <div id="money-box"> <!-- display money and scoreboard-->
+      <h2 style = "color: yellow;">Money: $<span id="money"></span></h2>
+      <h4 id = "change-money" style = "color: green"></h4>
+      <div id="player-board">
+        <table>
+          <thead>
+            <tr>
+              <th>Player</th>
+              <th>Money</th>
+            </tr>
+          </thead>
+          <tbody id="tablebody">
+
+          </tbody>
+        </table>
+      </div>
+    </div> 
+    <canvas id="myCanvas"></canvas>
+    <h2 id="winner-box">Enter Username and Place Bet!</h2>  <!-- display winner -->
+    <input type = "text" id = "login" placeholder  = "Username:"></input>
+    <button id = "loginbutton">Login</button>
+    <input type = "text" id="amount-input" placeholder="Bet Amount:"></input>
+    <button id="bet-button">Place Bet</button>
+    <form id = "choose-horse">
+      <select id="select-horse" placeholder = "Select Horse">
+        <option id = "blueHorse" value="0">Blue</option>
+        <option id = "greenHorse" value="1">Green</option>
+        <option id = "redHorse" value="2">Red</option>
+        <option id = "yellowHorse" value="3">Yellow</option>
+        <option id = "purpleHorse" value="4">Purple</option>
+      </select>
+      </form>
+    
+    
+  </div>
+
+  <!-- Your contents -->
+  
+  <script src="js/vendor/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="js/vendor/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
